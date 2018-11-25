@@ -1,4 +1,4 @@
-package org.chenguoyu.sort;/**
+package org.chenguoyu.list;/**
  * Created by 陈国钰 on 2018/3/28 0028.
  */
 
@@ -11,7 +11,7 @@ import java.util.List;
  * @describe 排序工具类
  * @date 2018/3/28 0028
  */
-public class SortUtil {
+public class ListUtil {
     /**
      * 交换List中的a,b下标的两个元素
      *

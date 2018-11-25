@@ -1,4 +1,6 @@
-package org.chenguoyu.sort;
+package org.chenguoyu.list.sort;
+
+import org.chenguoyu.list.ListUtil;
 
 import java.util.List;
 
@@ -19,13 +21,13 @@ public class SelectionSort<T extends Comparable> {
                     k = j;
                 }
             }
-            SortUtil.swap(arr, i, k);
+            ListUtil.swap(arr, i, k);
         }
     }
 
     public static void main(String[] args) {
-        List<Integer> arr = SortUtil.randomInts(10000, 0, 10000);
+        List<Integer> arr = ListUtil.randomInts(10000, 0, 10000);
         (new SelectionSort<Integer>()).sort(arr);
-        SortUtil.outList(arr);
+        ListUtil.outList(arr);
     }
 }

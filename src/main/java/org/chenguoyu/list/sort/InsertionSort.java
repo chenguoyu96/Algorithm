@@ -1,4 +1,6 @@
-package org.chenguoyu.sort;
+package org.chenguoyu.list.sort;
+
+import org.chenguoyu.list.ListUtil;
 
 import java.util.List;
 
@@ -23,11 +25,11 @@ public class InsertionSort<T extends Comparable> {
     }
 
     public static void main(String[] args) {
-        List<Integer> arr = SortUtil.randomInts(10, 0, 10000);
+        List<Integer> arr = ListUtil.randomInts(10, 0, 10000);
         long before = System.currentTimeMillis();
         (new InsertionSort<Integer>()).sort(arr);
         long after = System.currentTimeMillis();
         System.out.println((double) (after - before) / 1000);
-        SortUtil.outList(arr);
+        ListUtil.outList(arr);
     }
 }
