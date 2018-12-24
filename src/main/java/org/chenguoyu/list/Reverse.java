@@ -1,6 +1,4 @@
-package org.chenguoyu.list.reverse;
-
-import org.chenguoyu.list.ListUtil;
+package org.chenguoyu.list;
 
 import java.util.Arrays;
 import java.util.LinkedList;
